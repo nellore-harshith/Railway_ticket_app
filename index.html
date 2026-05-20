@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Reservation System</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>🚆 Railway Reservation</h2>
+    </nav>
+
+    <div class="container">
+
+        <h1>Train Reservation System</h1>
+
+        <div class="train-list">
+
+            <h2>Available Trains</h2>
+
+            <table>
+
+                <tr>
+                    <th>Train No</th>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>1001</td>
+                    <td>Red Lines Express</td>
+                    <td>Boston to Manhattan</td>
+                    <td>₹5000</td>
+                </tr>
+
+                <tr>
+                    <td>1002</td>
+                    <td>LA City Express</td>
+                    <td>Boston to L.A</td>
+                    <td>₹4500</td>
+                </tr>
+
+                <tr>
+                    <td>1003</td>
+                    <td>Iron City Express</td>
+                    <td>Boston to Chicago</td>
+                    <td>₹4000</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <form id="reservationForm">
+
+            <h2>Book Ticket</h2>
+
+            <input type="text" id="name" placeholder="Passenger Name" required>
+
+            <input type="number" id="train" placeholder="Train Number" required>
+
+            <input type="number" id="seats" placeholder="Number of Seats" required>
+
+            <button type="submit">Reserve Ticket</button>
+
+        </form>
+
+        <div id="ticket"></div>
+
+    </div>
+
+    <footer>
+        <p>🚆 Developed by Harshith Nellore</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
